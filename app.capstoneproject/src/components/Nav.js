@@ -1,3 +1,6 @@
+import React from 'react';
+import {Route, RouterProvider, Routes, Link} from 'react-router-dom'
+
 function Nav() {
     return (
 <nav class="navBar">

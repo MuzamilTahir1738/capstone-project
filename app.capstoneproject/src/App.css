@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Karla:100,200,400);
+
 .navBar {
   display: flex;
   flex-wrap: wrap;
@@ -26,6 +28,7 @@ li.navList a {
   flex-wrap: wrap;
   align-self: center;
   justify-content: center;
+  padding-top: 40px;
 }
 .footer img {
   display: block;
@@ -43,7 +46,6 @@ li.navList a {
 
 }
 
-
 li.footerLink a {
   display: block;
   color: rgb(3, 3, 3);
@@ -51,4 +53,71 @@ li.footerLink a {
   padding: 16px;
   text-decoration: none;
   text-align: left;
+}
+
+.heading {
+  display: grid;
+  grid-template-areas:
+    'heading image'
+    'subheading image'
+    'description image'
+    'button image' ;
+ grid-template-columns: 380px 50px;
+ grid-template-rows: 55px 100px 180px 100px;
+ background-color: #495E57 ;
+ padding-left: 260px;
+ margin-bottom: 100;
+}
+.title {
+  grid-area: heading;
+  font-size: 4em;
+  padding-top: 10px;
+  color: #F4CE14;
+  font-family: 'Markazi Text', serif;
+  font-weight: bold;
+  text-align: left;
+}
+.subHeading {
+  grid-area: subheading;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  font-size: 3em;
+  margin-top: 50px;
+  color: white;
+  font-family: 'Markazi Text', serif;
+  font-weight: lighter;
+  text-align: left;
+}
+.headingImg {
+  grid-area: image;
+  width: 300px;
+  margin-left: 50px;
+  margin-right: 150px;
+  position: relative;
+  bottom: -15px;
+  border: transparent;
+  border-radius: 30px 30px 30px 30px;
+}
+.description {
+  grid-area: description;
+  font-size: 1.5em;
+  color: white;
+  text-align: left;
+  font-family:'Karla';
+  font-weight: 400;
+}
+.reserveButton {
+  grid-area: button;
+  background-color: #F4CE14; /* Green */
+  border: transparent;
+  color: black;
+  padding: 15px;
+  margin: 10px 180px 30px 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  border-radius: 15px ;
+  text-align: center;
+  font-weight: 600;
 }
