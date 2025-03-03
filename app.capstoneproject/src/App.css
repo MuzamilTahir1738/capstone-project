@@ -63,10 +63,10 @@ li.footerLink a {
     'subheading subheading image'
     'description description image'
     'button image' ;*/
- grid-template-columns: minmax(min-content 280px) minmax(min-content 400px);
- grid-template-rows: 38px 45px 80px;
+ grid-template-columns: 270px auto;
+ grid-template-rows: 40px 55px 80px;
  gap: 5px;
- padding: min(25vw);
+ padding: 30vw;
  padding-top: 20px;
  padding-bottom: 0;
  margin-top: 0;
@@ -83,13 +83,15 @@ li.footerLink a {
 }
 .headingImg img {
   border-radius: 15px;
+  margin-left: 200px;
 }
 .title {
   line-height: 0;
-  margin: 0;
+  margin-bottom: 20;
   color: #F4CE14;
   font-family: 'Markazi Text';
   font-size: 1.5rem;
+  align-items: start;
 }
 .subHeading {
   line-height: 0;
@@ -99,6 +101,7 @@ li.footerLink a {
   font-size: 1.3rem;
   padding: 0px;
   margin-bottom: 10px;
+  align-content: start;
 }
 .description {
   font-family:'Karla';
@@ -121,61 +124,22 @@ li.footerLink a {
   text-align: center;
   font-weight: 600;
 }
-/*.heading {
-  display:flex ;
-  background-color: #495E57;
-  flex-direction: column;
-}
-
-.title {
-  grid-area: heading;
-  font-size: 50px;
-  color: #F4CE14;
-  font-family: 'Markazi Text', serif;
-  font-weight: 900;
-  text-align: left;
-  justify-self: start;
-}
-.subHeading {
-  grid-area: subheading;
-  font-size: 35px;
-  margin-top: 3rem;
-  color: white;
-  font-family: 'Markazi Text', serif;
-  font-weight: lighter;
-  text-align: left;
-}
-.headingImg {
-  grid-area: image;
-  width: 320px;
-  position: relative;
-  bottom: -25px;
-  border: transparent;
-  border-radius: 30px 30px 30px 30px;
-}
-.description {
-  grid-area: description;
-  font-size: 1.2rem;
-  color: white;
-  text-align: left;
-  font-family:'Karla';
-  font-weight: 300;
-  padding-right: 50px;
-}*/
-
-/*.specialsHeading {
-  display: inline-flex;
+.specialsHeading {
+  display:flex;
   align-items: center;
-  padding: 260px;
+  padding: 500px;
   padding-bottom: 10px;
   padding-top: 20px;
 }
-.specialsHeading > h3 {
+.headingSpecial {
   color: black;
   font-family: 'Markazi Text';
   font-size: 50px;
+  flex-grow: 3;
 
 }
-.specialsHeading > a {
+.menuButton {
   padding-left: 5px;
-}*/
+  justify-items: flex-end;
+  flex-grow: 5;
+}

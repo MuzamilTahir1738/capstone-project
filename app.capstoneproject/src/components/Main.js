@@ -2,8 +2,8 @@ function Main() {
     return (
         <main className="main">
             <div class = 'specialsHeading'>
-            <h3>This weeks specials</h3>
-            <a href = 'littlelemon.com/menu'>Online Menu</a>
+            <h3 class='headingSpecial'>This weeks specials</h3>
+            <a class ='menuButton'href = 'littlelemon.com/menu'>Online Menu</a>
             </div>
             <div class= 'menuCard'>
             <div class = 'greekSalad'>
