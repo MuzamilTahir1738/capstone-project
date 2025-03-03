@@ -1,5 +1,9 @@
+import {useState, useEffect} from 'react';
+
 function bookingForm() {
-    return(
+    
+   
+   return(
         <form style="display: grid; max-width: 200px; gap: 20px">
    <label htmlFor="res-date">Choose date</label>
    <input type="date" id="res-date"/>
