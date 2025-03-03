@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Karla:100,200,400);
+@import url(https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..900&display=swap);
 
 .navBar {
   display: flex;
@@ -66,14 +67,14 @@ li.footerLink a {
  grid-template-columns: 270px auto;
  grid-template-rows: 40px 55px 80px;
  gap: 5px;
- padding: 30vw;
+ padding: 25vw;
  padding-top: 20px;
  padding-bottom: 0;
  margin-top: 0;
 }
-.heading > div {
-  /* background-color: white; */
-}
+/* .heading > div {
+    background-color: white;
+} */
 .headingImg {
   grid-column: 2;
   grid-row: 1 / span 3;
@@ -125,21 +126,146 @@ li.footerLink a {
   font-weight: 600;
 }
 .specialsHeading {
-  display:flex;
+  display:inline-flex;
   align-items: center;
-  padding: 500px;
+  padding-left: 320px;
   padding-bottom: 10px;
-  padding-top: 20px;
+  padding-top: 10px;
+  margin-top: 30px;
 }
 .headingSpecial {
   color: black;
+  font-size: 35px;
+  align-items: center;
   font-family: 'Markazi Text';
-  font-size: 50px;
-  flex-grow: 3;
-
+  font-weight: 800;
 }
 .menuButton {
-  padding-left: 5px;
-  justify-items: flex-end;
+  padding-left: 100px;
+  border: transparent;
+  background-color: #F4CE14;
+  justify-items: flex-start;
+  display: inline-block;
+  padding: 15px;
+  margin-left:300px;
   flex-grow: 5;
+  border-radius: 15px;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: 600;
+}
+.menuCard {
+  display: grid;
+  /* background-color: #495E57; */
+  grid-template-columns:240px 240px 240px;
+  padding: 10px;
+  margin:0px 210px 0 300px;
+  gap: 5px;
+  align-self: center;
+}
+
+/* .menuCard > div {
+  background-color: red;
+} */
+  .greekSalad {
+    display: grid;
+    grid-template-areas: 'image image'
+                         'dish price'
+                         'description description'
+                         'order icon';
+  }
+  
+  .greekSaladImg {
+    grid-area: image;
+    border-radius: 15px 15px 0 0;
+    
+  
+  }
+  .greekSalad .price {
+    grid-area: price;
+    justify-self: end;
+    color: #F4CE14;
+    font-weight: bold;
+    padding-top: 5px;
+  }
+  .greekSalad .description {
+    grid-area: description;
+    color: #495E57;
+  }
+  .greekSalad a {
+    border: transparent;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+  }
+  
+.bruchetta {
+  display: grid;
+  grid-template-areas: 'image image'
+                       'dish price'
+                       'description description'
+                       'order icon';
+}
+
+.bruchettaImg {
+  grid-area: image;
+  border-radius: 15px 15px 0 0;
+
+}
+.bruchetta .price {
+  grid-area: price;
+  justify-self: end;
+  color: #F4CE14;
+  font-weight: bold;
+  padding-top: 5px;
+}
+.bruchetta .description {
+  grid-area: description;
+  margin-top: 20px;
+  color: #495E57;
+}
+.bruchetta a {
+  margin-top: 20px;
+  border: transparent;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+.bruchetta .bike {
+  margin-top: 20px;
+}
+/* .bruchetta h4 {
+  margin-bottom: 5px;
+  padding-bottom: 20px;
+} */
+
+.lemonDessert {
+  display: grid;
+  grid-template-areas: 'image image'
+                       'dish price'
+                       'description description'
+                       'order icon';
+}
+
+.lemonImg {
+  grid-area: image;
+  border-radius: 15px 15px 0 0;
+
+}
+.lemonDessert .price {
+  grid-area: price;
+  justify-self: end;
+  color: #F4CE14;
+  font-weight: bold;
+  padding-top: 0;
+}
+.lemonDessert .description {
+  grid-area: description;
+  color: #495E57;
+}
+.lemonDessert a {
+  border: transparent;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
 }
