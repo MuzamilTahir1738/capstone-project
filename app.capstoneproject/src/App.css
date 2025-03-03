@@ -57,32 +57,89 @@ li.footerLink a {
 
 .heading {
   display: grid;
-  grid-template-areas:
-    'heading image'
-    'subheading image'
-    'description image'
-    'button image' ;
- grid-template-columns: 380px 50px;
- grid-template-rows: 55px 100px 180px 100px;
- background-color: #495E57 ;
- padding-left: 260px;
- margin-bottom: 100;
+  background-color: #495E57 ;
+  /*grid-template-areas:
+    'heading heading image'
+    'subheading subheading image'
+    'description description image'
+    'button image' ;*/
+ grid-template-columns: minmax(min-content 280px) minmax(min-content 400px);
+ grid-template-rows: 38px 45px 80px;
+ gap: 5px;
+ padding: min(25vw);
+ padding-top: 20px;
+ padding-bottom: 0;
+ margin-top: 0;
+}
+.heading > div {
+  /* background-color: white; */
+}
+.headingImg {
+  grid-column: 2;
+  grid-row: 1 / span 3;
+  position: relative;
+  bottom: -25px;
+  justify-self: end;
+}
+.headingImg img {
+  border-radius: 15px;
 }
 .title {
+  line-height: 0;
+  margin: 0;
+  color: #F4CE14;
+  font-family: 'Markazi Text';
+  font-size: 1.5rem;
+}
+.subHeading {
+  line-height: 0;
+  font-family: 'Markazi Text', serif;
+  font-weight: lighter;
+  color: white;
+  font-size: 1.3rem;
+  padding: 0px;
+  margin-bottom: 10px;
+}
+.description {
+  font-family:'Karla';
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: white;
+}
+.button .reserve {
+  grid-area: button;
+  background-color: #F4CE14;
+  border: transparent;
+  color: black;
+  padding: 15px;
+  margin: 30px 10px 60px 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 15px ;
+  text-align: center;
+  font-weight: 600;
+}
+/*.heading {
+  display:flex ;
+  background-color: #495E57;
+  flex-direction: column;
+}
+
+.title {
   grid-area: heading;
-  font-size: 4em;
-  padding-top: 10px;
+  font-size: 50px;
   color: #F4CE14;
   font-family: 'Markazi Text', serif;
-  font-weight: bold;
+  font-weight: 900;
   text-align: left;
+  justify-self: start;
 }
 .subHeading {
   grid-area: subheading;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  font-size: 3em;
-  margin-top: 50px;
+  font-size: 35px;
+  margin-top: 3rem;
   color: white;
   font-family: 'Markazi Text', serif;
   font-weight: lighter;
@@ -90,34 +147,35 @@ li.footerLink a {
 }
 .headingImg {
   grid-area: image;
-  width: 300px;
-  margin-left: 50px;
-  margin-right: 150px;
+  width: 320px;
   position: relative;
-  bottom: -15px;
+  bottom: -25px;
   border: transparent;
   border-radius: 30px 30px 30px 30px;
 }
 .description {
   grid-area: description;
-  font-size: 1.5em;
+  font-size: 1.2rem;
   color: white;
   text-align: left;
   font-family:'Karla';
-  font-weight: 400;
+  font-weight: 300;
+  padding-right: 50px;
+}*/
+
+/*.specialsHeading {
+  display: inline-flex;
+  align-items: center;
+  padding: 260px;
+  padding-bottom: 10px;
+  padding-top: 20px;
 }
-.reserveButton {
-  grid-area: button;
-  background-color: #F4CE14; /* Green */
-  border: transparent;
+.specialsHeading > h3 {
   color: black;
-  padding: 15px;
-  margin: 10px 180px 30px 0px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 18px;
-  border-radius: 15px ;
-  text-align: center;
-  font-weight: 600;
+  font-family: 'Markazi Text';
+  font-size: 50px;
+
 }
+.specialsHeading > a {
+  padding-left: 5px;
+}*/
