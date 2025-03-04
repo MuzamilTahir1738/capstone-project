@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import Nav from "../components/Nav";
-import Main from "../components/Main";
+import Main from "../components/HomeMain";
 import Footer from "../components/Footer";
 
 

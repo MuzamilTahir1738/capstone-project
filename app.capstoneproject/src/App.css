@@ -59,22 +59,14 @@ li.footerLink a {
 .heading {
   display: grid;
   background-color: #495E57 ;
-  /*grid-template-areas:
-    'heading heading image'
-    'subheading subheading image'
-    'description description image'
-    'button image' ;*/
- grid-template-columns: 270px auto;
- grid-template-rows: 40px 55px 80px;
- gap: 5px;
- padding: 25vw;
- padding-top: 20px;
- padding-bottom: 0;
- margin-top: 0;
+  grid-template-columns: 270px auto;
+  grid-template-rows: 40px 55px 80px;
+  gap: 5px;
+  padding: 25vw;
+  padding-top: 20px;
+  padding-bottom: 0;
+  margin-top: 0;
 }
-/* .heading > div {
-    background-color: white;
-} */
 .headingImg {
   grid-column: 2;
   grid-row: 1 / span 3;
@@ -84,7 +76,7 @@ li.footerLink a {
 }
 .headingImg img {
   border-radius: 15px;
-  margin-left: 200px;
+  margin-left: 1.5vw;
 }
 .title {
   line-height: 0;
@@ -125,14 +117,13 @@ li.footerLink a {
   text-align: center;
   font-weight: 600;
 }
-.specialsHeading {
-  display:inline-flex;
-  align-items: center;
-  padding-left: 320px;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  margin-top: 30px;
+
+.main {
+  padding: 24vw;
+  padding-top: 3vw;
+  padding-bottom: 0;
 }
+
 .headingSpecial {
   color: black;
   font-size: 35px;
@@ -140,22 +131,24 @@ li.footerLink a {
   font-family: 'Markazi Text';
   font-weight: 800;
 }
-.main {
-  padding: 240px;
-  padding-top: 0;
-  padding-bottom: 0;
+
+.specialsHeading {
+  display:inline-flex;
+  align-items: center;
+  /* padding-left: 320px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-top: 30px; */
 }
+
 .menuButton {
-  padding-left: 100px;
   border: transparent;
   background-color: #F4CE14;
   justify-items: flex-start;
   display: inline-block;
   padding: 15px;
-  margin-left:300px;
-  flex-grow: 5;
+  margin-left:18.5vw;
   border-radius: 15px;
-  justify-content: center;
   text-decoration: none;
   font-weight: 600;
   color: black;
@@ -163,9 +156,9 @@ li.footerLink a {
 .menuCard {
   display: grid;
   /* background-color: #495E57; */
-  grid-template-columns:240px 240px 240px;
-  padding: 10px;
-  margin:0px 210px 0 300px;
+  grid-template-columns:18vw 18vw 18vw;
+  /* padding: 10px; */
+  margin:0px 0px 0 0px;
   gap: 5px;
   align-self: center;
 }
@@ -184,6 +177,7 @@ li.footerLink a {
   .greekSaladImg {
     grid-area: image;
     border-radius: 15px 15px 0 0;
+    width: 18vw;
     
   
   }
@@ -216,6 +210,7 @@ li.footerLink a {
 .bruchettaImg {
   grid-area: image;
   border-radius: 15px 15px 0 0;
+  width: 18vw;
 
 }
 .bruchetta .price {
@@ -256,6 +251,8 @@ li.footerLink a {
 .lemonImg {
   grid-area: image;
   border-radius: 15px 15px 0 0;
+  width: 18vw;
+  height: 12vw;
 
 }
 .lemonDessert .price {

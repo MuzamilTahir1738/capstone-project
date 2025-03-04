@@ -1,5 +1,5 @@
 import './App.css';
-import Home from './pages/home.js'
+import Home from './pages/HomePage.js'
 import BookingPage from './pages/BookingPage.js';
 import { Routes, Route, Navigate} from 'react-router-dom';
 function App() {

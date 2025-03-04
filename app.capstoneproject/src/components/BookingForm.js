@@ -3,15 +3,11 @@ import {useFormik} from 'formik';
 function BookingForm() {
 
 const [date, setDate] = useState();
-const [time, setTime] = useState(['17:00', '18:00', '19:00', '20:00', '21:00', '22:00']);
 const [guests, setGuests] = useState();
 const [occasion, setOccasion] = useState(['Birthday', 'Anniversary'])
 
 const handleDateChange = (e) => {
    setDate(e.target.value)
-};
-const handleTimeChange = (e) => {
-   setTime(e.target.value)
 };
 const handleGuestsChange = (e) => {
    setGuests(e.target.value)
@@ -21,7 +17,7 @@ const handleOccasionChange = (e) => {
 };
 const handleSubmit = (e) => {
    e.preventDefault();
-   console.log(`Reservation made for ${occasion} with ${guests} guests at ${time} ${date}` )
+   console.log(`Reservation made for ${occasion} with ${guests} guests at ${date}` )
 }
    return(
       <form style={{ display: 'grid', maxWidth: '200px', gap: '20px' }}>
@@ -34,7 +30,7 @@ const handleSubmit = (e) => {
    <label htmlFor="res-time">Choose time</label>
    <select
    id="res-time "
-   onChange={handleTimeChange}
+   // onChange=
    >
       <option>17:00</option>
       <option>18:00</option>
