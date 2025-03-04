@@ -1,11 +1,11 @@
 import {useState, useEffect} from 'react';
 import {useFormik} from 'formik';
 
-function bookingForm() {
+function BookingForm() {
     
    
    return(
-        <form style="display: grid; max-width: 200px; gap: 20px">
+      <form style={{ display: 'grid', maxWidth: '200px', gap: '20px' }}>
    <label htmlFor="res-date">Choose date</label>
    <input type="date" id="res-date"/>
    <label htmlFor="res-time">Choose time</label>
@@ -28,3 +28,4 @@ function bookingForm() {
 </form>
     )
 }
+export default BookingForm
