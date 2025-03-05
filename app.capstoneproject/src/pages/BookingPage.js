@@ -1,6 +1,6 @@
 import BookingForm from '../components/BookingForm';
 import Nav from '../components/Nav';
-import React, { useReducer } from 'react';
+import React ,{ useReducer } from 'react';
 
 
 export const initializeTimes = () => ({
@@ -27,7 +27,7 @@ export const updateTimes = (selectedTime, dispatch) => {
 
 const BookingPage = () => {
 
-  const [state, dispatch] = React.useReducer(availableTimesReducer, initializeTimes());
+  const [state, dispatch] = useReducer(availableTimesReducer, initializeTimes());
 
 
     return (

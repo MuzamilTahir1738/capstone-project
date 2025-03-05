@@ -58,9 +58,7 @@ li.footerLink a {
   text-align: center;
   padding: 5vw 30vw;
 }
-.heading > div {
-  /* background-color: red; */
-}
+
 .headingImg {
   grid-column: 2;
   justify-self: start;
