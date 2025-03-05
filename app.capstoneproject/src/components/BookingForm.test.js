@@ -1,6 +1,6 @@
 import { jest } from '@jest/globals';
-import { render, screen, renderHook, React } from "@testing-library/react";
-import BookingPage, {initializeTimes, updateTimes, availableTimesReducer}  from "../pages/BookingPage";
+import { render, screen, React } from "@testing-library/react";
+import BookingPage, {initializeTimes, updateTimes}  from "../pages/BookingPage";
 
 test('Renders the BookingForm heading', () => {
     render(<BookingPage />);
