@@ -1,9 +1,9 @@
 import { jest } from '@jest/globals';
 import { render, screen, React } from "@testing-library/react";
-import BookingPage, {initializeTimes, updateTimes}  from "../pages/BookingPage";
+import Main ,{initializeTimes, updateTimes} from './Main';
 
 test('Renders the BookingForm heading', () => {
-    render(<BookingPage />);
+    render(<Main />);
     const headingElement = screen.getByText("Reserve now");
     expect(headingElement).toBeInTheDocument();
 })

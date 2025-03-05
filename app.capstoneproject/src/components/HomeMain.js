@@ -1,6 +1,6 @@
-function Main() {
+function Menu() {
     return (
-        <main className="main">
+        <article className="main">
             <div className = 'specialsHeading'>
             <h3 className='headingSpecial'>This weeks specials</h3>
             <a className ='menuButton'href = 'littlelemon.com/menu'>Online Menu</a>
@@ -31,8 +31,8 @@ function Main() {
             <img url= {require('./bike.svg')} alt= 'bike'/>
             </div>
             </div>
-        </main>
+        </article>
     )
 }
 
-export default Main;
+export default Menu;
